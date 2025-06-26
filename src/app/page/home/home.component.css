@@ -1,0 +1,47 @@
+.banner {
+    background-image: url('/assets/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: flex-start; 
+    color: white;
+    font-family: 'Comic Sans MS', 'Fredoka', cursive;
+    padding: 60px;
+    gap: 20px;
+        padding-right: 120px;
+}
+
+.banner p {
+    font-size: 22px;
+}
+
+.boton-divertido {
+  background-color: #ffcc00;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  animation: rebote 2s infinite;
+}
+
+.boton-divertido:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background-color: #ff9900;
+}
+
+@keyframes rebote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
