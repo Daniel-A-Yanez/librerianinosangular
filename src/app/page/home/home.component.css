@@ -9,9 +9,9 @@
     align-items: flex-start; 
     color: white;
     font-family: 'Comic Sans MS', 'Fredoka', cursive;
-    padding: 60px;
+    padding: 80px;
     gap: 20px;
-        padding-right: 120px;
+    padding-right: 120px;
 }
 
 .banner p {
@@ -20,7 +20,7 @@
 
 .boton-divertido {
   background-color: #ffcc00;
-  color: #ffffff;
+  color: #744107;
   font-size: 1.5rem;
   padding: 15px 30px;
   border: none;
@@ -44,4 +44,40 @@
   50% {
     transform: translateY(-8px);
   }
+}
+
+.colecciones {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.colecciones h2 {
+    color: rgb(33, 138, 103);
+}
+
+.colecciones p {
+    font-size: 18px;
+    color: #744107;
+    font-weight: bold;
+}
+
+.libros {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.libros img {
+    width: 70%;
+    cursor: pointer;
+}
+
+.libros img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
