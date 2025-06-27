@@ -3,13 +3,13 @@
         <div class="row text-center">
             <h2>Formulario de contacto</h2>
         </div>
-    <form>
+    <form (ngSubmit)="enviarFormulario()">
         <div class="row m-3">
         <div class="col">
-        <input type="text" class="form-control" placeholder="Nombre">
+        <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="nombre" name="nombre">
         </div>
         <div class="col">
-        <input type="text" class="form-control" placeholder="Apellido">
+        <input type="text" class="form-control" placeholder="Apellido" [(ngModel)]="apellido" name="apellido">
         </div>
         </div>
         <div class="row m-3">
