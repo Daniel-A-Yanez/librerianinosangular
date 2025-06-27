@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-lg">
 <div class="row">
     <div class="col-md-12 text-center">
         <h1>Lista de Libros</h1>
@@ -8,15 +8,17 @@
     </div>
 </div>
 
-    <div class="container-xl">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 card" *ngFor="let libro of libros | filtroLibros:filtroCategoria">
-                <img class="img-fluid card-img-top" [src]="libro.imagen" alt="{{libro.titulo}}" />
+            <div class="col-3 p-0 m-0" *ngFor="let libro of libros | filtroLibros:filtroCategoria">
+                <div class="card m-2">
+                    <img class="img-fluid card-img-top" [src]="libro.imagen" alt="{{libro.titulo}}" />
 
-                <div class="card-body text-center">
+                    <div class="card-body text-center">
                     <h5 class="card-title">{{libro.titulo}}</h5>
                     <p class="card-text">{{libro.autor}}</p>
                     <p class="card-text">{{libro.categoria}}</p>
+                    </div>
                 </div>
             </div>
         </div>
