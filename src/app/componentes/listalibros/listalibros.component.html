@@ -1,0 +1,24 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>Lista de Libros</h1>
+    </div>
+    <div class="container">
+    <input type="text" class="form-control mb-3" [(ngModel)]="filtroCategoria" placeholder="Buscar libros..." />
+    </div>
+</div>
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-4 card" *ngFor="let libro of libros | filtroLibros:filtroCategoria">
+                <img class="img-fluid card-img-top" [src]="libro.imagen" alt="{{libro.titulo}}" />
+
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{libro.titulo}}</h5>
+                    <p class="card-text">{{libro.autor}}</p>
+                    <p class="card-text">{{libro.categoria}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
